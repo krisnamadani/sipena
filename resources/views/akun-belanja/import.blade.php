@@ -76,8 +76,7 @@
                                 <label for="file" class="form-label">Pilih File Excel <span
                                         class="text-danger">*</span></label>
                                 <input type="file" id="file" name="file" accept=".xlsx,.xls,.csv"
-                                    style="display:none;">
-                                <button type="button" id="btnFile" class="btn btn-primary">📁 Pilih File</button>
+                                    style="position: relative; z-index: 999999;" />
                                 @error('file')
                                     <div class="invalid-feedback">{{ $message }}</div>
                                 @enderror
@@ -174,9 +173,4 @@
             </div>
         </div>
     </div>
-    <script>
-        document.getElementById('btnFile').addEventListener('click', () => {
-            document.getElementById('file').click();
-        });
-    </script>
 @endsection
