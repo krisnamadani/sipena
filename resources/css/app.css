@@ -13,6 +13,8 @@
 
 .card,
 .card-body,
-.container-fluid {
+.container-fluid,
+.row,
+.col-md-8 {
     overflow: visible !important;
 }
