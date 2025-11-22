@@ -6,6 +6,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <meta name="csrf-token" content="{{ csrf_token() }}">
     <title>{{ config('app.name', 'Laravel') }} - @yield('title')</title>
+    <link rel="shortcut icon" href="{{ asset('iain.png') }}" type="image/x-icon">
 
     @vite(['resources/sass/app.scss', 'resources/js/app.js'])
 
@@ -39,7 +40,7 @@
         <nav class="navbar navbar-expand-md navbar-light bg-white shadow-sm">
             <div class="container-fluid">
                 <a class="navbar-brand" href="{{ url('/dashboard') }}">
-                    <img src="{{ asset('kemenag.svg') }}" alt="Logo" class="app-logo">
+                    <img src="{{ asset('iain.png') }}" alt="Logo" class="app-logo">
                     <strong>{{ config('app.name', 'Validasi Belanja') }}</strong>
                 </a>
                 <button class="navbar-toggler" type="button" data-bs-toggle="collapse"
