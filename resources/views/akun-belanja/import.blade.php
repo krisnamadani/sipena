@@ -76,7 +76,8 @@
                                 <label for="file" class="form-label">Pilih File Excel <span
                                         class="text-danger">*</span></label>
                                 <input type="file" class="form-control @error('file') is-invalid @enderror"
-                                    id="file" name="file" accept=".xlsx,.xls,.csv" required>
+                                    id="file" name="file" accept=".xlsx,.xls,.csv"
+                                    style="opacity:0;position:absolute;" required>
                                 @error('file')
                                     <div class="invalid-feedback">{{ $message }}</div>
                                 @enderror
