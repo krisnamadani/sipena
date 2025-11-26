@@ -16,7 +16,7 @@
                     <div class="flex-grow-1 ms-3">
                         <h3 class="mb-1">Selamat datang di SIPENA</h3>
                         <p class="text-muted mb-0">
-                            Sistem Informasi Pengelolaan Akun Belanja -
+                            Sistem Pengecekan Akun Belanja -
                             <strong>{{ Auth::user()->name }}</strong>
                             @if (Auth::user()->isSuperAdmin())
                                 <span class="badge bg-danger ms-1">Superadmin</span>
