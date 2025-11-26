@@ -6,6 +6,27 @@
     <div class="container-fluid">
         <h1 class="h2 mb-4">Dashboard</h1>
 
+        <!-- Welcome Card -->
+        <div class="card border-primary mb-4">
+            <div class="card-body">
+                <div class="d-flex align-items-center">
+                    <div class="flex-shrink-0">
+                        <span style="font-size: 48px;">👋</span>
+                    </div>
+                    <div class="flex-grow-1 ms-3">
+                        <h3 class="mb-1">Selamat datang di SIPENA</h3>
+                        <p class="text-muted mb-0">
+                            Sistem Informasi Pengelolaan Akun Belanja -
+                            <strong>{{ Auth::user()->name }}</strong>
+                            @if (Auth::user()->isSuperAdmin())
+                                <span class="badge bg-danger ms-1">Superadmin</span>
+                            @endif
+                        </p>
+                    </div>
+                </div>
+            </div>
+        </div>
+
         <div class="row mb-4">
             <div class="col-md-4 mb-3">
                 <div class="card text-white bg-primary">
